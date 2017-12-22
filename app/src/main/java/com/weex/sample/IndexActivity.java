@@ -15,7 +15,7 @@ public class IndexActivity extends AppCompatActivity {
     findViewById(R.id.btn_local).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        startActivity(new Intent(IndexActivity.this, LocalActivity.class));
+        startActivity(new Intent(IndexActivity.this, NavigationActivity.class));
       }
     });
 

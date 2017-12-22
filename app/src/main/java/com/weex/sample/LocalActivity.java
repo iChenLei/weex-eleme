@@ -31,7 +31,7 @@ public class LocalActivity extends AppCompatActivity implements IWXRenderListene
      */
     Map<String,Object> options=new HashMap<>();
     options.put(WXSDKInstance.BUNDLE_URL,"file://hello.js");
-    mWXSDKInstance.render("WXSample", WXFileUtils.loadAsset("hello.js", this), null, null, WXRenderStrategy.APPEND_ASYNC);
+    mWXSDKInstance.render("WXSample", WXFileUtils.loadAsset("index.js", this), null, null, WXRenderStrategy.APPEND_ASYNC);
   }
 
   @Override
