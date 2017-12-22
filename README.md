@@ -1,1 +1,30 @@
-# WXSample
+<h4>weex-eleme</h4>
+<p>
+<img src="https://img.shields.io/badge/language-Javascript-green.svg?style=flat-square" />
+<img src="https://img.shields.io/badge/framework-weex-green.svg?style=flat-square" />
+<img src="https://img.shields.io/badge/platform-Android-red.svg?style=flat-square" />
+<img src="https://img.shields.io/badge/status-active-red.svg?style=flat-square" />
+</p>
+<div style="display:flex;justify-content:center;flex-direction:row;width=800px;">
+		<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tly1fmpkjjh7v5j30u01hcdvv.jpg" width="200px" height="355px"/>
+		<img src="http://ww3.sinaimg.cn/large/0060lm7Tly1fmpkj6ccrhj30u01hcqfl.jpg" width="200px" height="355px"/><img src="http://ww1.sinaimg.cn/large/0060lm7Tly1fmpkinz1haj30u01hcnpd.jpg" width="200px" height="355px"/><img src="http://ww4.sinaimg.cn/large/0060lm7Tly1fmpkj0wcpuj30u01hchdt.jpg" width="200px" height="355px"/>
+	    </p>
+</div>
+
+#### Hot to run it?
+
+```bash
+git clone https://github.com/iChenLei/weex-eleme.git
+cd weex-eleme
+```
+<em>使用Android Studio打开项目，先使用gradle下载依赖jar包，然后run</em>
+#### Dev Road map
+1.Implement Flash page<br>
+2.<del>Implement tabbar and four important fragment page</del><br>
+3.complete user page and order page<br>
+4.implement shop page and shopping cart<br>
+5.add more animation<br>
+6.implement search feature<br>
+7.and more feature
+
+##### MIT License @ichenlei 2017-present
