@@ -5,7 +5,9 @@
 <img src="https://img.shields.io/badge/platform-Android-red.svg?style=flat-square" />
 <img src="https://img.shields.io/badge/status-active-red.svg?style=flat-square" />
 </p>
-####  常见问题(FAQ)
+
+#### 常见问题(FAQ)
+
 <ul><li><a href="https://github.com/iChenLei/weex-eleme/issues/1">打开weex的正确姿势到底是什么？</a></li>
 <li><a href="https://github.com/iChenLei/weex-eleme/issues/2">写给安卓开发工程师的weex开发指南，iOS工程师可以参考</a></li>
 <li><a href="https://github.com/iChenLei/weex-eleme/issues/3">从被问烂的新手问题[如何加载本地图片?]出发，浅谈weex的图片问题</a></li>
