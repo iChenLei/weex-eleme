@@ -27,7 +27,7 @@ cd weex-eleme
 ```
 <em>使用Android Studio打开项目，先使用gradle下载依赖jar包，然后run</em>
 #### Dev Road map
-1.<del>Implement Flash page<del><br>
+1.<del>Implement Flash page</del><br>
 2.<del>Implement tabbar and four important fragment page</del><br>
 3.complete user page and order page<br>
 4.implement shop page and shopping cart<br>
