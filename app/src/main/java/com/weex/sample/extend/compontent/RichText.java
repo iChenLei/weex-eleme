@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.URLSpan;
+import android.text.util.Linkify;
 import android.widget.TextView;
 
 import com.taobao.weex.WXSDKInstance;
@@ -27,15 +28,16 @@ public class RichText extends WXComponent<TextView> {
   @Override
   protected TextView initComponentHostView(@NonNull Context context) {
     TextView textView = new TextView(context);
-    textView.setTextSize(30);
     textView.setTextColor(Color.BLACK);
+    textView.setAutoLinkMask(Linkify.PHONE_NUMBERS);
+    textView.setText("10086");
     return textView;
   }
 
   @WXComponentProp(name = "tel")
   public void setTel(String number) {
-    SpannableString spannableString=new SpannableString(number);
-    spannableString.setSpan(new URLSpan("tel:"+number), 0, number.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-    getHostView().setText(spannableString);
+//    SpannableString spannableString=new SpannableString(number);
+//    spannableString.setSpan(new URLSpan("tel:"+number), 0, number.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+    (getHostView()).setText(number);
   }
 }

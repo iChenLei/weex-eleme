@@ -10,6 +10,7 @@
 
 <ul><li><a href="https://github.com/iChenLei/weex-eleme/issues/1">打开weex的正确姿势到底是什么？</a></li>
 <li><a href="https://github.com/iChenLei/weex-eleme/issues/2">写给安卓开发工程师的weex开发指南，iOS工程师可以参考</a></li>
+<li><a href="https://github.com/iChenLei/weex-eleme/issues/4">路由用vue-router?浅谈如何解决Tabbar这个刚需</a></li>
 <li><a href="https://github.com/iChenLei/weex-eleme/issues/3">从被问烂的新手问题[如何加载本地图片?]出发，浅谈weex的图片问题</a></li>
 </ul>
 <div style="display:flex;justify-content:center;flex-direction:row;width=800px;">
@@ -26,7 +27,7 @@ cd weex-eleme
 ```
 <em>使用Android Studio打开项目，先使用gradle下载依赖jar包，然后run</em>
 #### Dev Road map
-1.Implement Flash page<br>
+1.<del>Implement Flash page<del><br>
 2.<del>Implement tabbar and four important fragment page</del><br>
 3.complete user page and order page<br>
 4.implement shop page and shopping cart<br>

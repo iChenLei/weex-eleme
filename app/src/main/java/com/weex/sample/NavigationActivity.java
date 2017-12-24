@@ -24,6 +24,8 @@ import java.util.List;
 public class NavigationActivity extends FragmentActivity{
 
     private int mCurrentFragment;
+    private RadioGroup radioGroup;
+    private ViewPager viewPager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,14 +38,38 @@ public class NavigationActivity extends FragmentActivity{
         setContentView(R.layout.bottom_navigation);
         initTabbar();
         initFragment();
+
+        radioGroup = (RadioGroup)findViewById(R.id.rg);
+        viewPager = (ViewPager)findViewById(R.id.fragment_master);
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+                    case R.id.rb_home:
+                        viewPager.setCurrentItem(0,false);break;
+                    case R.id.rb_find:
+                        viewPager.setCurrentItem(1,false);break;
+                    case R.id.rb_order:
+                        viewPager.setCurrentItem(2,false);break;
+                    case R.id.rb_mine:
+                        viewPager.setCurrentItem(3,false);break;
+                    default:
+                        viewPager.setCurrentItem(0,true);
+                }
+            }
+        });
     }
 
 
     public  void initFragment(){
         ViewPager viewpager = (ViewPager)findViewById(R.id.fragment_master);
         List<Fragment> list = new ArrayList<Fragment>();
+//        list.add(TestFragment.newInstance("diy.js"));
         list.add(TestFragment.newInstance("home.js"));
         list.add(TestFragment.newInstance("web.js"));
+        list.add(TestFragment.newInstance("shoppingcart.js"));
+        list.add(TestFragment.newInstance("hello.js"));
         FragmentPagerAdapater fpa = new FragmentPagerAdapater(getSupportFragmentManager(),list);
         viewpager.setAdapter(fpa);
         viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -54,8 +80,16 @@ public class NavigationActivity extends FragmentActivity{
 
             @Override
             public void onPageSelected(int position) {
-                mCurrentFragment = position;
-                System.out.print(position);
+                switch (position){
+                    case 0:
+                        radioGroup.check(R.id.rb_home);break;
+                    case 1:
+                        radioGroup.check(R.id.rb_find);break;
+                    case 2:
+                        radioGroup.check(R.id.rb_order);break;
+                    case 3:
+                        radioGroup.check(R.id.rb_mine);break;
+                }
             }
 
             @Override
